@@ -15,7 +15,7 @@ const document = SwaggerModule.createDocument(app, config);
 SwaggerModule.setup('api-docs', app, document);
 
 
-await app.listen(process.env.PORT || 5500);
+await app.listen(process.env.PORT || 5500, "0.0.0.0");
 
 }
 bootstrap();
